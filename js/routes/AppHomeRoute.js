@@ -1,10 +1,14 @@
 import Relay from 'react-relay';
 
+// Writing the game
+// Let's tweak the file ./js/routes/AppHomeRoute.js
+// to anchor our game to the game root field of the schema:
+
 export default class extends Relay.Route {
   static queries = {
-    viewer: () => Relay.QL`
+    game: () => Relay.QL`
       query {
-        viewer
+        game
       }
     `,
   };
